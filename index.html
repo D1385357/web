@@ -6,12 +6,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="glow"></div>
     <div class="container">
+        <img src="img/Twitch-Symbol.png" class="logo">
         <h1>出了點問題</h1>
         <p>目前服務暫時無法使用，正在努力修復中</p>
         <p class="sub">我們正在盡快解決此問題，感謝您的耐心等待</p>
+        <p class="sub">我們正在重新連線到伺服器...</p>
         <p>預計恢復：<span id="time">15</span> 秒</p>
-        
+        <div class="loader"></div>
         <div class="bar">
             <div class="progress" id="progress"></div>
             <button id="backBtn" onclick="goTwitch()" style="display:none;">
