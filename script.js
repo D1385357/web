@@ -3,6 +3,7 @@ let total = 15;
 
 let el = document.getElementById("time");
 let progress = document.getElementById("progress");
+let btn = document.getElementById("backBtn");
 
 let timer = setInterval(() => {
     time--;
@@ -14,9 +15,14 @@ let timer = setInterval(() => {
 
     if (time <= 0){
         clearInterval(timer);
-        el.textContent = "0";
+        el.textContent ="0";
         progress.style.width = "100%";
+
+         btn.style.display = "inline-block";
     }
 
 }, 1000);
 
+function goTwitch() {
+    window.location.href = "https://www.twitch.tv/";
+}
